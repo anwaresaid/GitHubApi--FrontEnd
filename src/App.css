@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body {
+    height: 100%;
+    background-color: gray;
+    color: orange;
+}
+.page {
+    height: 100vh;
+    width: 100%;
+    background-color: #282d35;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    height: 40px;
+    border-radius: 10px;
+}
+.landing-page-container {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #282d35;
+    overflow-y: scroll;
+}
+.bookMark {
+    margin-left: 50px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+.error-message {
+    color: red;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-side {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid salmon;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: salmon;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input:focus {
+    border: 1px solid salmon;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #282d35;
+}
+
+.button {
+    height: 100%;
+    width: 30%;
+    background-color: salmon;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    color: #282d35;
+    box-sizing: content-box;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.results-container {
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-container {
+    display: flex;
+    cursor: pointer;
+    width: 44%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row {
+    display: flex;
+    cursor: pointer;
+    width: 44%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row > h2 {
+    color: salmon;
+    pointer-events: auto;
+}
+.repo-name {
+    margin-left: 5px;
+}
+
+.repo-details-container {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-row {
+    height: 20px;
+    width: 98%;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 20px;
+    color: #696c71;
+}
+
+.value {
+    color: salmon;
+}
+
+.loader {
+    color: salmon;
+    margin-left: 5%;
 }
